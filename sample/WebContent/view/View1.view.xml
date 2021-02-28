@@ -6,7 +6,7 @@
 					<content>
 					<Button text="edit" press="onedit"/>
 					<Button text="save" press="onsave"/>
-					<Button text="delete" press="onDelete"/>
+					
 						<!--<Table id="td1" items="{/value}">-->
 						<!--	<columns>-->
 						<!--				<Column>-->
