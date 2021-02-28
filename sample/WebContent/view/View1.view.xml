@@ -1,0 +1,60 @@
+<mvc:View controllerName="c.cog.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:table="sap.ui.table">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+					<Button text="edit" press="onedit"/>
+					<Button text="save" press="onsave"/>
+						<!--<Table id="td1" items="{/value}">-->
+						<!--	<columns>-->
+						<!--				<Column>-->
+						<!--					<Text text="OrderID"/>-->
+						<!--				</Column>-->
+						<!--				<Column>-->
+						<!--					<Text text="Order Date"/>-->
+						<!--				</Column>-->
+						<!--				<Column>-->
+						<!--					<Text text="ShipName"/>-->
+						<!--				</Column>-->
+						<!--				<Column>-->
+						<!--					<Text text="Ship City"/>-->
+						<!--				</Column>-->
+						<!--				<Column>-->
+						<!--					<Text text="country"/>-->
+						<!--				</Column>-->
+						<!--				<Column>-->
+						<!--					<Text text="ShipPostalCode"/>-->
+						<!--				</Column>-->
+						<!--			</columns>-->
+						<!--	<items>-->
+						<!--		<ColumnListItem>-->
+						<!--			<cells>-->
+						<!--				<Text text="{OrderID}"/>-->
+						<!--				<Text text="{OrderDate}"/>-->
+						<!--				<Text text="{ShipName}"/>-->
+						<!--				<Text text="{ShipCity}"/>-->
+						<!--				<Text text="{ShipCountry}"/>-->
+						<!--				<Text text="{ShipPostalCode}"/>-->
+						<!--			</cells>-->
+						<!--		</ColumnListItem>-->
+						<!--	</items>-->
+						<!--</Table>-->
+						<table:Table id="td1" rows="{attributes>/results}">
+							
+							<table:columns>
+								<table:Column>
+									<Label text="AttributeType"/>
+									<table:template>
+										<Input value="{attributes>attibuteDesc}"/>
+									</table:template>
+								</table:Column>
+								
+							</table:columns>
+						</table:Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
